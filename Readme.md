@@ -3,7 +3,7 @@
 This project demonstrates a **fully automated CI/CD pipeline** using **AWS native services** to deploy a **multi-tier Java application** (Profile App).  
 It replaces manual Jenkins-based deployments with a **modern, serverless, AWS-native pipeline** that’s faster, scalable, and cost-efficient.
 
-> 🎯 **Goal:** Build a cloud-native CI/CD pipeline using AWS managed services — from commit to deployment — with zero manual steps.
+>  **Goal:** Build a cloud-native CI/CD pipeline using AWS managed services — from commit to deployment — with zero manual steps.
 
 ---
 
