@@ -33,6 +33,11 @@ It replaces manual Jenkins-based deployments with a **modern, serverless, AWS-na
 
 ````
 
+## 🎥 Project Demo
+
+[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/6b5b5bfde8e3438da0c39e63d52cdac3-with-play.gif)](https://www.loom.com/share/6b5b5bfde8e3438da0c39e63d52cdac3)
+
+
 ### **Project Highlights**
 
 This project demonstrates my ability to architect and implement a complete CI/CD pipeline using AWS-native services — integrating Bitbucket for version control, CodeBuild for compilation, and Elastic Beanstalk for deployment. By automating the build-test-deploy workflow end-to-end, I reduced release time by 80%, eliminated operational bottlenecks, and delivered a scalable, secure, and production-ready application infrastructure.
