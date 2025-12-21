@@ -44,7 +44,7 @@ This project demonstrates my ability to architect and implement a complete CI/CD
 
 
 
-[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/6b5b5bfde8e3438da0c39e63d52cdac3-with-play.gif)](https://www.loom.com/share/6b5b5bfde8e3438da0c39e63d52cdac3)
+[![Demo](https://img.shields.io/badge/Video-Demo-blue)](https://www.loom.com/share/6b5b5bfde8e3438da0c39e63d52cdac3)
 
 
 ### Author
