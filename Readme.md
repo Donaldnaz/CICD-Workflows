@@ -5,9 +5,6 @@ It replaces manual Jenkins-based deployments with a **modern, serverless, AWS-na
 
 >  **Goal:** Build a cloud-native CI/CD pipeline using AWS managed services — from commit to deployment — with zero manual steps.
 
-## 🎥 Demo Video
-👉 Watch the demo here: https://www.loom.com/share/6b5b5bfde8e3438da0c39e63d52cdac3
-
 ---
 
 ### Tech Stack
@@ -36,9 +33,9 @@ It replaces manual Jenkins-based deployments with a **modern, serverless, AWS-na
 
 ````
 
-## 🎥 Project Demo
+## 🎥 Demo Video
+👉 Watch the demo here: https://www.loom.com/share/6b5b5bfde8e3438da0c39e63d52cdac3
 
-[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/6b5b5bfde8e3438da0c39e63d52cdac3-with-play.gif)](https://www.loom.com/share/6b5b5bfde8e3438da0c39e63d52cdac3)
 
 
 ### **Project Highlights**
