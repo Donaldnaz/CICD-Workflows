@@ -3,16 +3,6 @@
 This project demonstrates a **fully automated CI/CD pipeline** using **AWS native services** to deploy a **multi-tier Java application** (Profile App).  
 It replaces manual Jenkins-based deployments with a **modern, serverless, AWS-native pipeline** that’s faster, scalable, and cost-efficient.
 
-- **AWS CI/CD Pipeline Full Project** → [`aws-ci`](https://anasiezeikenna.notion.site/AWS-CI-CD-Pipeline-27005c74585e805c842dd5220424a735)  
-
-
-### Overview
-
-Traditional Jenkins & EC2 deployments were:
-- Manual, error-prone, and not scalable  
-- Required constant maintenance of build servers and environments  
-- Slowed down release cycles and increased operational costs  
-
 > 🎯 **Goal:** Build a cloud-native CI/CD pipeline using AWS managed services — from commit to deployment — with zero manual steps.
 
 ---
@@ -31,60 +21,21 @@ Traditional Jenkins & EC2 deployments were:
 | Monitoring | CloudWatch | Centralized logging, metrics, and alarms |
 
 
-### Architecture Overview
+## Project Structure
 
-<img width="1024" height="1024" alt="ChatGPT Image Oct 2, 2025, 02_47_15 PM" src="https://github.com/user-attachments/assets/78b8681d-7e1b-4291-9cfe-7e2533d7b307" />
+````
+/src                                      # Project Source Directory
+├── Architecture.png                      # Cloud Architecture Diagram
+├── Guide.pdf                             # Step by Step Deployment Guide
+├── Prerequisites.md                      # Prerequisites to Deploy Stack
+├── buildspec.yml                         # Build instructions for AWS CodeBuild
+├── README.md                             # Project Overview 
 
-**Pipeline Flow:**
-1. Developer pushes code to **Bitbucket**  
-2. **CodePipeline** triggers automatically  
-3. **CodeBuild** compiles and packages WAR → uploads to **S3**  
-4. **Elastic Beanstalk** deploys the new version automatically  
-5. **CloudFront + Route 53** provide secure and global access  
+````
 
----
+### **Project Highlights**
 
-### Implementation Steps
+This project demonstrates my ability to architect and implement a complete CI/CD pipeline using AWS-native services — integrating Bitbucket for version control, CodeBuild for compilation, and Elastic Beanstalk for deployment. By automating the build-test-deploy workflow end-to-end, I reduced release time by 80%, eliminated operational bottlenecks, and delivered a scalable, secure, and production-ready application infrastructure.
 
-1. **Migrate source code** from GitHub → Bitbucket  
-2. **Create Elastic Beanstalk environment** (Tomcat platform)  
-3. **Provision Amazon RDS** (MySQL) for persistent storage  
-4. **Define `buildspec.yml`** in Bitbucket repo for CodeBuild instructions  
-5. **Create S3 bucket** for artifact storage  
-6. **Set up AWS CodePipeline**:
-   - Source: Bitbucket  
-   - Build: CodeBuild  
-   - Deploy: Elastic Beanstalk  
-7. **Integrate Route 53 & CloudFront** for DNS + CDN  
-8. **Push code to Bitbucket** and observe full pipeline automation  
-
----
-
-### Setup Details
-
-#### 1. Database
-Created **Amazon RDS (MySQL)** instance and initialized schema via MySQL scripts.
-
-#### 2. Application Platform
-Deployed the app using **Elastic Beanstalk** (Tomcat 8.x environment).
-
-#### 3. Networking & Security
-- Configured **Security Groups** for RDS and Beanstalk.  
-- Allowed inbound ports 80/443 for Beanstalk and 3306 for DB access.  
-
-#### 4. CodeBuild
-Configured build environment via `buildspec.yml`:
-
-```yaml
-version: 0.2
-phases:
-  install:
-    commands:
-      - echo Installing dependencies...
-  build:
-    commands:
-      - echo Building project...
-      - mvn clean package
-artifacts:
-  files:
-    - target/*.war
+### Author
+### Anasieze Ikenna - Cloud Engineer
