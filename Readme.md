@@ -1,6 +1,6 @@
 # CI/CD Pipeline
 
-This repository serves as a production-ready reference for CI/CD workflows built and maintained by me.
+This repository serves as a production-style reference for CI/CD workflows built and maintained by me.
 
 >  **Goal:** To showcase how I design and automate delivery pipelines to reliably build, test, and deploy applications across cloud environments.
 
