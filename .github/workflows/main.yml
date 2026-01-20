@@ -1,9 +1,9 @@
 name: Build WF
-#2.0
-
+#3.0
 on:
   push:
-    branches: [ github_actions ]
+    branches:
+      - github_actions
 jobs:
   build:
     runs-on: ubuntu-latest
