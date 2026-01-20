@@ -1,31 +1,48 @@
 name: Build WF
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Code checkout
+      - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: maven
 
       - name: Maven Build
-        run: mvn install
         working-directory: app
-  Testing:
-    needs: Build
+        run: mvn clean install
+
+  testing:
+    needs: build
     runs-on: ubuntu-latest
+
     steps:
-      - name: Code checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: maven
+
       - name: Maven Test
-        run: mvn test
         working-directory: app
-        
-      # Ikenna
+        run: mvn test
+
       - name: Checkstyle
+        working-directory: app
         run: mvn checkstyle:check
-        
