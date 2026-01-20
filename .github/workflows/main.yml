@@ -1,0 +1,24 @@
+name: Build WF
+
+on:
+  push:
+    branches: [ github_actions ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build step
+        run: echo "Build job completed successfully"
+
+  testing:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Test step
+        run: echo "Tests passed successfully"
